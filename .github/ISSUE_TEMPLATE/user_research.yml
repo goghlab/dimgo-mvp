@@ -1,0 +1,90 @@
+name: 用戶研究參與 / User Research
+description: 想參與 DimGo 嘅用戶研究（訪問 / feedback / beta 試用）
+title: "[RESEARCH] "
+labels: ["user-research", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 想幫 DimGo 變得更好？
+        我哋會定期做用戶訪問同 beta 試用。填妥以下資料，A2 + A5 會聯絡你。
+
+  - type: input
+    id: name
+    attributes:
+      label: 稱呼
+      placeholder: Izzy / 陳小姐 / Mr. Chan
+    validations:
+      required: true
+
+  - type: input
+    id: whatsapp
+    attributes:
+      label: WhatsApp 號碼
+      placeholder: 9123 4567
+    validations:
+      required: true
+
+  - type: dropdown
+    id: user_type
+    attributes:
+      label: 身份
+      options:
+        - 一般家庭
+        - 屋苑住客
+        - 物業管理 / 業主立案法團
+        - 網店 / 微商
+        - 地產代理 / 經紀
+        - 中小企辦公室
+        - 服務商（想轉行 / 想搵多啲 lead）
+        - 其他
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: pain
+    attributes:
+      label: 你最希望 DimGo 幫你解決嘅問題（可選多項）
+      options:
+        - 搵家居清潔
+        - 搵滅蟲公司
+        - 約冷氣 / 電器維修
+        - 搵搬屋公司
+        - 搵裝修 / 油漆
+        - 搵水電 / 雜項維修
+        - 安排家居救急（漏水 / 塞渠）
+        - 公司訂貨 Van / 後勤
+        - 餐廳 / 票務 / 出行預約
+        - 其他
+
+  - type: textarea
+    id: current_workflow
+    attributes:
+      label: 你依家點處理呢啲事？最大嘅痛點係乜？
+      placeholder: |
+        例如：依家 WhatsApp 問 3 個 group，quote 要等 2 日，仲要自己追。
+      validations:
+      required: true
+
+  - type: textarea
+    id: willingness
+    attributes:
+      label: 願意參與嘅形式（訪問 / beta / 推薦朋友 / 其他）
+      placeholder: |
+        例如：可以 30 分鐘訪問 + 試用 beta 2 星期
+      validations:
+      required: false
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: 慣用語言
+      options:
+        - 廣東話（口語）
+        - 繁體中文（書寫）
+        - 英文
+        - 中英夾雜
+    validations:
+      required: true

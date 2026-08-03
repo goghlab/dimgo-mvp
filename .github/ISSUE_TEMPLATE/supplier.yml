@@ -1,0 +1,120 @@
+name: 服務商 / Supplier 申請
+description: 想加入 DimGo 成為服務商（清潔 / 師傅 / 搬運 / 滅蟲 / 其他）
+title: "[SUPPLIER] "
+labels: ["supplier", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 想成為 DimGo 服務商？
+        填妥以下資料，A6 (Supply Ops) 會喺 3 個工作天內回覆你。
+
+  - type: input
+    id: company
+    attributes:
+      label: 公司 / 工作室名稱
+      placeholder: 例如：明潔清潔服務有限公司
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: 聯絡人姓名
+      placeholder: 陳大文
+    validations:
+      required: true
+
+  - type: input
+    id: phone
+    attributes:
+      label: 聯絡電話（WhatsApp）
+      placeholder: 9123 4567
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 服務類別
+      multiple: true
+      options:
+        - 家居清潔
+        - 商業清潔
+        - 滅蟲
+        - 冷氣 / 電器維修
+        - 家居維修（油漆 / 水電 / 木工）
+        - 搬屋（貨 Van / 搬運 / 拆裝）
+        - 洗冷氣
+        - 深層清潔
+        - 其他
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 服務地區
+      multiple: true
+      options:
+        - 香港島
+        - 九龍
+        - 新界（西）
+        - 新界（東）
+        - 新界（北）
+        - 大嶼山 / 離島
+        - 全港
+    validations:
+      required: true
+
+  - type: input
+    id: experience
+    attributes:
+      label: 經驗（年）
+      placeholder: 5
+    validations:
+      required: true
+
+  - type: input
+    id: team_size
+    attributes:
+      label: 團隊人數
+      placeholder: 3
+    validations:
+      required: true
+
+  - type: input
+    id: br
+    attributes:
+      label: 商業登記號碼（BR）
+      placeholder: 12345678
+    validations:
+      required: true
+
+  - type: input
+    id: insurance
+    attributes:
+      label: 保險（有無 + 公司名）
+      placeholder: 有，AXA / Zurich / 其他
+    validations:
+      required: false
+
+  - type: textarea
+    id: licenses
+    attributes:
+      label: 相關牌照（滅蟲牌 / 電工牌 / 其他）
+      placeholder: |
+        例如：滅蟲牌照編號 PCO-1234
+      validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 補充（強項 / 過往客戶 / 可即時提供服務嘅時間）
+      placeholder: |
+        例如：可即時提供服務；過去客戶包括 X 屋苑 / Y 商場
+      validations:
+      required: false
