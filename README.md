@@ -64,7 +64,7 @@
 
 **No phase-jumping without meeting the prior phase's exit criteria.**
 
-詳見 [`docs/PRD.md`](docs/PRD.md) 同 [`docs/ROADMAP.md`](docs/ROADMAP.md)。
+詳見 [`docs/PRD.md`](docs/PRD.md) · [`docs/SYSTEM_MESSAGE.md`](docs/SYSTEM_MESSAGE.md) · [`docs/ROADMAP.md`](docs/ROADMAP.md) · [`docs/decisions/`](docs/decisions/) (ADRs)。
 
 ---
 
@@ -113,7 +113,8 @@
 - 🤝 **供應商申請 / 合作**：用 `.github/ISSUE_TEMPLATE/supplier.yml`
 - 🔬 **用戶研究參與**：用 `.github/ISSUE_TEMPLATE/user_research.yml`
 
-讀 [`CONTRIBUTING.md`](CONTRIBUTING.md) 先。
+讀 [`CONTRIBUTING.md`](CONTRIBUTING.md) 先。  
+**Architecture decisions：** 睇 [`docs/decisions/`](docs/decisions/) 入面嘅 ADR（Single Source of Truth、Audit Trail、Cantonese-first 等）。
 
 ---
 
@@ -131,4 +132,4 @@ Apache License 2.0 — 詳見 [`LICENSE`](LICENSE)。
 
 ---
 
-— Maintained by AI Agent team · Last update 2026-08-03
+— Maintained by DimGo multi-agent team · Last update 2026-08-03

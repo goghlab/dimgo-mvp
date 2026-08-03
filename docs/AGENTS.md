@@ -127,7 +127,23 @@ For cross-agent handoffs: append a short note to `data/<topic>/` with:
 
 ---
 
-## 9. Vocabulary to Enforce
+## 9. Architecture Decision Records (ADRs)
+
+重大 architectural 決定都寫入 [`decisions/`](decisions/)，每份 ADR 包括：
+- Status（Accepted / Proposed / Deprecated）
+- Context（咩問題）
+- Decision（揀咗咩方案 + 規則）
+- Consequences（正反影響）
+- Alternatives considered
+
+當前 ADRs：
+- `0001-single-source-of-truth.md` — 所有 business rule 入 engine
+- `0002-audit-trail.md` — Append-only audit + DB-level enforcement
+- `0003-cantonese-first.md` — Provider abstraction + intent library
+
+---
+
+## 10. Vocabulary to Enforce
 
 - **Always:** GMV · take rate · AOV · CSAT · repeat rate · contribution margin · CAC · LTV
 - **Always:** Phase 0 / 1 / 2 / 3 — avoid "v1 / v2"
