@@ -84,6 +84,23 @@
 
 ---
 
+## 🔒 Security & Governance
+
+- **System 訊息 / hard rules**：[`docs/SYSTEM_MESSAGE.md`](docs/SYSTEM_MESSAGE.md)
+- **Architecture decisions**：[`docs/decisions/`](docs/decisions/)（SSOT · Audit Trail · Cantonese-first）
+- **File ownership**：[`.github/CODEOWNERS`](.github/CODEOWNERS)
+- **回報 security issue**：[`SECURITY.md`](SECURITY.md)（Phase 0 經 `[email protected]`）
+
+4 條 security hard rules：
+1. 唔會自動扣用戶錢
+2. Audit trail 係 append-only（DB-level rule 強制）
+3. Actor 必須從認證層嚟
+4. Sponsor / 付費排位要清楚標示
+
+詳見 [`SECURITY.md`](SECURITY.md)。
+
+---
+
 ## 🚦 Hard rules（不可違反）
 
 1. **Never auto-charge users.** 每筆 payment 都要 human-readable confirmation + 用戶明示確認。
@@ -132,4 +149,4 @@ Apache License 2.0 — 詳見 [`LICENSE`](LICENSE)。
 
 ---
 
-— Maintained by DimGo multi-agent team · Last update 2026-08-03
+— Maintained by DimGo multi-agent team · Last update 2026-08-03 (Commit 4: governance)

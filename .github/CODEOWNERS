@@ -1,0 +1,59 @@
+# CODEOWNERS — DimGo 掂Go! AI
+#
+# 規則：
+# 1. 每個 owner 一個 handle（Phase 0 統一收埋喺 @goghlab/dimgo-core，
+#    Phase 1 之後開始拆俾真人 agent）。
+# 2. 後面嘅 rule 覆蓋前面（last match wins）。
+# 3. Phase 1 backend 嘅 owner 預留，下一 commit 啟用。
+
+# --- Default: 全部入 dimgo-core 審批圈 ---
+*                                              @goghlab/dimgo-core
+
+# --- 公共入口 / 條款 / 招股說明類（CEO 觸及） ---
+/LICENSE                                        @goghlab/dimgo-core
+/README.md                                      @goghlab/dimgo-core
+/CONTRIBUTING.md                                @goghlab/dimgo-core
+/docs/PRD.md                                    @goghlab/dimgo-core
+/docs/ROADMAP.md                                @goghlab/dimgo-core
+
+# --- 系統訊息 + ADR（CEO + Product 雙鎖；最重要嘅 governance 文件） ---
+/docs/SYSTEM_MESSAGE.md                         @goghlab/dimgo-core
+/docs/decisions/                                @goghlab/dimgo-core
+
+# --- Multi-agent 框架：每個 agent file 對應返佢個 owner 將來嘅 handle ---
+# Phase 0：統一收 dimgo-core。Phase 1 開 individual handles 之後，逐一替換。
+/agents/00_AGENT_INDEX.md                       @goghlab/dimgo-core
+/agents/01_CEO_Biz_Partnerships.md              @goghlab/dimgo-core
+/agents/02_Product_AI_Lead.md                   @goghlab/dimgo-core
+/agents/03_Eng_Web.md                           @goghlab/dimgo-core
+/agents/04_Eng_Backend_Agent.md                 @goghlab/dimgo-core
+/agents/05_Ops_UserCS.md                        @goghlab/dimgo-core
+/agents/06_Ops_Supply.md                        @goghlab/dimgo-core
+/agents/07_Supply_SME_Sales.md                  @goghlab/dimgo-core
+
+# --- 階段 roadmap ---
+/phases/                                        @goghlab/dimgo-core
+
+# --- Agent playbooks ---
+/playbooks/                                     @goghlab/dimgo-core
+
+# --- SOPs ---
+# 合規 / PDPO / 退款 / 審批 屬 CEO + Ops 共同擁有
+/sops/01_*.md                                   @goghlab/dimgo-core
+/sops/02_*.md                                   @goghlab/dimgo-core
+/sops/03_*.md                                   @goghlab/dimgo-core
+/sops/04_*.md                                   @goghlab/dimgo-core
+/sops/05_*.md                                   @goghlab/dimgo-core
+/sops/06_*.md                                   @goghlab/dimgo-core
+
+# --- Issue templates（Ops User CS 擁有） ---
+/.github/ISSUE_TEMPLATE/                        @goghlab/dimgo-core
+
+# --- Security / governance ---
+/.github/CODEOWNERS                             @goghlab/dimgo-core
+/SECURITY.md                                    @goghlab/dimgo-core
+
+# Phase 1 之後會加入（純 comment，唔影響現時生效）：
+# /apps/api/                                    @goghlab/dimgo-core
+# /packages/engine/                             @goghlab/dimgo-core
+# /schemas/sql/                                 @goghlab/dimgo-core
